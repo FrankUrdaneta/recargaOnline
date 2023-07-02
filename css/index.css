@@ -1,0 +1,123 @@
+body {
+  background: url("../images/banner.png") center center fixed;
+  height: 100vh;
+  background-size: auto 108%;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  background-position: right top;
+  color: #666666;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.80857;
+  font-weight: normal;
+}
+.gif_recarga {
+  position: relative;
+}
+
+.small-gif {
+  /* ajusta el tamaño según tus necesidades */
+  height: auto;
+  margin-top: -4rem;
+  animation: updown 3s linear infinite;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
+}
+
+.btn {
+  width: 100%;
+  padding: 6px 0;
+  background: #ff6600;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  margin-top: 4.2px;
+  border-radius: 3rem;
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/poppins-italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cochin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/cochin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/poppins-bold.otf") format("opentype");
+}
+
+.titles {
+  position: relative;
+  height: 13vh;
+}
+h1 {
+  color: #0f98f8;
+  font-size: 42px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.80857;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card-form {
+  /* background: url("../images/wave2.svg");
+  background-repeat: no-repeat; */
+
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+.container {
+  margin-top: 5rem;
+}
+.card-title {
+  text-align: center;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(
+      -10px
+    ); /* Ajusta la distancia hacia arriba según tus necesidades */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated-gif {
+  animation: moveUpDown 3s infinite ease-in-out; /* Ajusta la duración de la animación según tus necesidades */
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .small-gif {
+    position: absolute;
+    margin-top: 60rem;
+  }
+}
